@@ -1,37 +1,20 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi primera página interactiva</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; min-height: 100vh; display: grid; place-items: center; background: #e0f2fe; color: #0f172a; transition: background 0.4s; }
-    main { max-width: 560px; margin: 24px; padding: 40px; text-align: center; background: white; border-radius: 20px; box-shadow: 0 10px 30px #0f172a22; }
-    h1 { color: #2563eb; }
-    p { line-height: 1.6; }
-    button { border: 0; border-radius: 999px; padding: 13px 22px; background: #2563eb; color: white; font-size: 1rem; cursor: pointer; }
-    button:hover { background: #1d4ed8; }
-    body.sorpresa { background: #fef3c7; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santvi · El mejor pueblo del mundo</title>
+<style>
+:root{--mar:#0b5d82;--sol:#f8c53a;--rojo:#aa151b;--tinta:#102a43;--crema:#fffaf0}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;color:var(--tinta);background:var(--crema);line-height:1.55}.hero{min-height:92vh;color:white;display:grid;place-items:center;text-align:center;padding:32px;background:linear-gradient(110deg,#001a2cbb,#004a70a8),url("https://www.svmontalt.cat/ARXIUS/FOTOS/POBLE/PLATJAgran.jpg") center/cover fixed}.hero-inner{max-width:800px}.pill{display:inline-block;padding:7px 14px;border:1px solid #fff8;border-radius:99px;background:#ffffff18;letter-spacing:.12em;font-size:.75rem}.hero h1{font-size:clamp(3.2rem,10vw,7rem);line-height:.9;margin:20px 0}.hero h1 span{color:#ffe07b}.hero p{font-size:1.2rem;max-width:620px;margin:0 auto 24px}.button{display:inline-block;background:var(--sol);color:#182b3a;padding:13px 20px;border-radius:99px;text-decoration:none;font-weight:bold}.bandera{height:15px;background:linear-gradient(var(--rojo) 0 25%,#f1bf00 25% 75%,var(--rojo) 75%)}main{max-width:1100px;margin:auto;padding:70px 24px}.intro{text-align:center;max-width:730px;margin:0 auto 55px}.intro h2{font-size:2.5rem;margin-bottom:8px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 10px 30px #102a4315}.card img{width:100%;height:210px;object-fit:cover}.card div{padding:20px}.card h3{margin:0 0 9px;color:var(--mar)}.reasons{margin-top:70px;padding:48px;border-radius:24px;color:white;background:linear-gradient(110deg,#002d48d9,#0b5d82cc),url("https://commons.wikimedia.org/wiki/Special:FilePath/Platja%20de%20Sant%20Vicen%C3%A7.jpg?width=1600") center/cover}.reasons h2{margin-top:0;font-size:2.3rem}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.fact{padding:16px;border-left:3px solid var(--sol);background:#ffffff14}.fact strong{display:block;color:#ffe07b;font-size:1.5rem}.video{margin:70px 0;text-align:center;padding:50px 30px;background:#e9f5f8;border-radius:24px}.video h2{font-size:2.1rem;margin:0 0 8px}.credit{font-size:.8rem;color:#52616b}footer{padding:35px 24px;text-align:center;color:white;background:#102a43}@media(max-width:700px){.grid,.facts{grid-template-columns:1fr}.hero{background-attachment:scroll}.reasons{padding:30px 22px}}
+</style>
 </head>
 <body>
-  <main>
-    <h1>¡Hola!</h1>
-    <p>Esta es mi primera página web publicada con GitHub.</p>
-    <p id="mensaje">Pulsa el botón para darle vida.</p>
-    <button id="boton">Sorpréndeme</button>
-  </main>
-  <script>
-    const boton = document.querySelector("#boton");
-    const mensaje = document.querySelector("#mensaje");
-
-    boton.addEventListener("click", () => {
-      const activa = document.body.classList.toggle("sorpresa");
-      mensaje.textContent = activa
-        ? "¡Bien! Acabas de usar JavaScript para cambiar la página."
-        : "Pulsa el botón para darle vida.";
-      boton.textContent = activa ? "Volver" : "Sorpréndeme";
-    });
-  </script>
+<div class="bandera" aria-label="Colores de la bandera de España"></div>
+<header class="hero"><div class="hero-inner"><span class="pill">SANT VICENÇ DE MONTALT · SANTVI</span><h1>El mejor pueblo<br><span>del mundo.</span></h1><p>Donde el Mediterráneo, la montaña y una manera de vivir se encuentran para hacer de Santvi un lugar imposible de olvidar.</p><a class="button" href="#descubrir">Descubre Santvi ↓</a></div></header>
+<main id="descubrir"><section class="intro"><h2>Pequeño en el mapa. Enorme en el corazón.</h2><p>Sant Vicenç de Montalt reúne el azul del mar, el verde de las rutas y la calma de un pueblo con vida propia. Es hogar, paseo y escapada en una sola postal.</p></section>
+<section class="grid"><article class="card"><img src="https://www.svmontalt.cat/ARXIUS/FOTOS/POBLE/PLATJAgran.jpg" alt="Platja de Sant Vicenç de Montalt"><div><h3>La platja</h3><p>Mar Mediterráneo, arena dorada y un paseo donde el tiempo se toma con calma.</p></div></article><article class="card"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Platja%20de%20Sant%20Vicen%C3%A7.jpg?width=1200" alt="Costa de Sant Vicenç de Montalt"><div><h3>El litoral</h3><p>Un horizonte abierto para nadar, caminar, mirar el amanecer o simplemente respirar.</p></div></article><article class="card"><img src="https://www.svmontalt.cat/ARXIUS/2023/PLATJA/IMATGES/platja__1_.jpg" alt="Verano en Sant Vicenç de Montalt"><div><h3>Vida de pueblo</h3><p>Fiestas, calles con historia y gente que hace que Santvi se sienta como casa.</p></div></article></section>
+<section class="reasons"><h2>¿Por qué Santvi es especial?</h2><div class="facts"><div class="fact"><strong>Mar</strong>Una playa amplia y un Mediterráneo que forma parte de cada día.</div><div class="fact"><strong>Muntanya</strong>Rutas, miradores y naturaleza a un paso de casa.</div><div class="fact"><strong>Comunidad</strong>Tradiciones, fiestas y ese orgullo tranquilo de ser de Sant Vicenç.</div></div></section>
+<section class="video"><h2>Una postal que se mueve contigo</h2><p>La portada reúne imágenes reales de Santvi. Explora el pueblo, pasea por su costa y descubre sus rutas.</p><a class="button" href="https://www.svmontalt.cat/visitasmv" target="_blank" rel="noopener">Ver la visita virtual oficial</a><p class="credit">Fotografías: Ajuntament de Sant Vicenç de Montalt y Wikimedia Commons (CC BY-SA).</p></section></main>
+<footer><strong>Santvi</strong> · Mar, montaña y corazón. <br>España · Cataluña · Mediterráneo</footer>
 </body>
 </html>
